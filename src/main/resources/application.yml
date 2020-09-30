@@ -1,0 +1,30 @@
+
+## Actuator
+management:
+  health:
+    ldap:
+      enabled: false
+    probes:
+      enabled: true
+  auditevents:
+    enabled: true
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+      show-components: always
+    info:
+      enabled: true
+    jolokia:
+      enabled: true
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include:
+          - '*'
+    jmx:
+      domain: com.idocs
+      exposure:
+        include:
+          - '*'
